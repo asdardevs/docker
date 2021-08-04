@@ -1,0 +1,18 @@
+version: "2"
+services:
+  myapp:
+    image: docker.io/bitnami/codeigniter:3
+    ports:
+      - "5050:8000"
+    volumes:
+      - ".:/app"
+    network_mode: "host"
+
+    # depends_on:
+    #   - mariadb
+#   mariadb:
+#     image: docker.io/bitnami/mariadb:10.3
+#     environment:
+#       - ALLOW_EMPTY_PASSWORD=yes
+
+#  docker-compose up -d

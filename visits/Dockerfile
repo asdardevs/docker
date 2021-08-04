@@ -16,7 +16,9 @@ COPY . .
 CMD ["npm", "start"]
 
 # docker build . => config =>images
+# docker build --tag codeigneter:1.0 .
 # docker build -t simpleweb .  => container
+# docker container create --name codeigneter codeigneter:1.0
 # docker run simpleweb
 # docker run -p 8888:8080 simpleweb => 8888 local network 8080 expose port
 # docker run -it simpleweb sh => cli container
